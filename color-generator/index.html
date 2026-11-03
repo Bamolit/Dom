@@ -31,7 +31,7 @@
             <div class="text-[30px] text-[#F4F4F5]">Color palettes.</div>
             <div class="text-[14px] text-[#A1A1AA] mt-[14px]">Generated shades with Tailwind color names. Click a shade to copy its HEX background color.</div>
           </div>
-          <button class="w-[186px] h-[48px] bg-[#D9F99D] text-[#09090B] rounded-xl text-[14px] ml-[434px] items-center flex justify-center gap-2">
+          <button id="shuffle-button" class="w-[186px] h-[48px] bg-[#D9F99D] text-[#09090B] rounded-xl text-[14px] ml-[434px] items-center flex justify-center gap-2 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -55,23 +55,9 @@
         <div class="border-t border-zinc-800 mt-[20px]"></div>
         <div class="flex justify-between mt-[30px]">
           <div class="text-[#A1A1AA] text-[12px]">100 → 950 · LIGHT TO DARK</div>
-          <div class="text-[#A1A1AA] text-[12px]">Ready to explore.</div>
+          <div id="status" class="text-[#A1A1AA] text-[12px]">Ready to explore.</div>
         </div>
-        <div class="text-[#E4E4E7] text-[14px] mt-[20px]">Red</div>
-        <div class="space-y-7">
-          <div class="mt-[12px] flex gap-3">
-            <button class="flex flex-col items-center">
-              <span class="bg-[#FDE3E3] w-[113px] h-[64px] rounded-xl"></span>
-              <span class="text-[#D4D4D8] text-[12px] mt-2">100</span>
-              <span class="text-[#A1A1AA] text-[9px] mt-[7px]">#09090B</span>
-            </button>
-            <button class="flex flex-col items-center">
-              <span class="bg-[#FABDBD] w-[113px] h-[64px] rounded-xl"></span>
-              <span class="text-[#D4D4D8] text-[12px] mt-2">200</span>
-              <span class="text-[#A1A1AA] text-[9px] mt-[7px]">#FABDBD</span>
-            </button>
-          </div>
-        </div>
+        <div id="colors" class="space-y-7"></div>
       </div>
     </div>
   </body>

@@ -24,10 +24,45 @@
         <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#d9f99d]/65">The everyday collection / 06</span>
       </header>
 
-<div class="flex flex-1 items-center justify-center py-10">
-        <!-- Endees ehel -->
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div class="h-[575px] w-[576px] p-8 flex-col bg-[#18181B] border border-[#27272A] rounded-xl">
+          <div class="text-[#F4F4F5] text-[24px]">Reaction time</div>
+          <div class="text-[#A1A1AA] text-[14px] mt-2">Wait for green, then click as quickly as you can.</div>
+          <button id="changing-color" class="cursor-pointer h-[256px] w-[512px] bg-[#27272A] rounded-xl flex flex-col items-center justify-center mt-[24px]">
+            <div id="changing-icons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-disc-2 preview-icon"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 12h.01" />
+              </svg>
+            </div>
+            <div id="changing-first-word" class="mt-3 text-[24px] text-[#F4F4F5] tracking-[5px]">Ready when you are</div>
+            <div id="changing-second-word" class="mt-3 text-[14px] text-[#F4F4F5]">Click to start</div>
+          </button>
+          <div class="flex gap-[12px] mt-[24px]">
+            <div class="h-[84px] w-[250px] rounded-xl bg-[#27272A] flex flex-col justify-center items-center gap-3">
+              <div id="last-second" class="border-[#D9F99D] border w-6 mt-[18px]"></div>
+              <div class="text-[12px] text-[#A1A1AA]">Last attempt</div>
+            </div>
+            <div class="h-[84px] w-[250px] rounded-xl bg-[#27272A] flex flex-col justify-center items-center gap-3">
+              <div id="best-second" class="border-[#D9F99D] border w-6 mt-[18px]"></div>
+              <div class="text-[12px] text-[#A1A1AA]">Best this session</div>
+            </div>
+          </div>
+          <div class="mt-5 text-[#A1A1AA] text-[12px] text-center">Click the panel, or focus it and press Space or Enter. Clicking before green ends the attempt.</div>
+        </div>
       </div>
     </div>
   </body>
 </html>
- 
